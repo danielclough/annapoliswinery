@@ -3,56 +3,67 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
+ 
 const Features = () => (
-  <Section id="features">
+  <Section id="wine">
     <StyledContainer>
-      <Subtitle>Learn More</Subtitle>
+      <Subtitle>Our Wine</Subtitle>
       <SectionTitle></SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>About Us</FeatureTitle>
+          <FeatureTitle>2016 Pinot Noir</FeatureTitle>
           <FeatureText>
-            The vinyards were planted in 1978 by Basil and Barbara Scalabrini.
+Deep color.  Strawberry and cherry fruit.  Orange peel finish.
+$60
+
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Wine Making</FeatureTitle>
+          <FeatureTitle>Barbera and Primitivo</FeatureTitle>
           <FeatureText>
-            Growing conditions in Annapolis are unique to Sonoma County.
+Italian Red Blend   "Red Wine"                                                                                   
+Dark fruit, rich body, French oak
+$32
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Philosophy</FeatureTitle>
+          <FeatureTitle>2016 Zinfandel</FeatureTitle>
           <FeatureText>
-            We practice sustainable farming and do not use synthetic pesticides.
+Raspberry, thyme, light and bright.  Tip: Served chilled, as a Rose
+$28
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Events</FeatureTitle>
+          <FeatureTitle>2008 Zinfandel Port</FeatureTitle>
           <FeatureText>
-            We have a complete kitchen, and can serve up to 200 guests.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Weddings</FeatureTitle>
-          <FeatureText>
-          We will help you plan according to your wishes to create a successful and joyful celebration.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>With Love</FeatureTitle>
-          <FeatureText>
-             We produce a very small amount of wine, taking personal care at each step of the process.
+Decadent desert, very intense fruit; 500ml (for adults only)
+$45
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
     </StyledContainer>
+
+    <WarningContainer>
+        <FeatureItem>
+          <FeatureTitle>WARNING</FeatureTitle>
+          <FeatureText>
+Drinking distilled spirits, beer, coolers, wine and other alcoholic beverages may increase cancer risk, and, during pregnancy, can cause birth defects.  For more information go to
+www.P65Warnings,ca.gov/alcohol  
+          </FeatureText>
+        </FeatureItem>
+    </WarningContainer>
+
   </Section>
 )
 
 export default Features
 
 const StyledContainer = styled(Container)``
+
+const WarningContainer = styled(Container)`
+  margin-top: 6%;
+`
+
 
 const SectionTitle = styled.h3`
   color: ${props => props.theme.color.primary};
@@ -71,7 +82,7 @@ const Subtitle = styled.h5`
 `
 
 const FeaturesGrid = styled.div`
-  max-width: 670px;
+  max-width: 3640px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0px auto;
