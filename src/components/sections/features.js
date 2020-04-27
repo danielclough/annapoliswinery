@@ -40,7 +40,7 @@ const Features = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
+          <FeatureTitle>With Love</FeatureTitle>
           <FeatureText>
              We produce a very small amount of wine, taking personal care at each step of the process.
           </FeatureText>
