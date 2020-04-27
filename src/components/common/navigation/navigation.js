@@ -97,7 +97,7 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <Link to="/contact">
+            <Link to="/">
               <button>Contact</button>
             </Link>
           </ActionsContainer>

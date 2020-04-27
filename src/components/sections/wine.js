@@ -45,11 +45,11 @@ $45
 
     <WarningContainer>
         <FeatureItem>
-          <FeatureTitle>WARNING</FeatureTitle>
-          <FeatureText>
-Drinking distilled spirits, beer, coolers, wine and other alcoholic beverages may increase cancer risk, and, during pregnancy, can cause birth defects.  For more information go to
-www.P65Warnings,ca.gov/alcohol  
-          </FeatureText>
+          <WarningTitle>WARNING</WarningTitle>
+          <WarningText>
+Drinking distilled spirits, beer, coolers, wine and other alcoholic beverages may increase cancer risk, and, during pregnancy, can cause birth defects.  <br />
+For more information go to www.P65Warnings.ca.gov/alcohol  
+          </WarningText>
         </FeatureItem>
     </WarningContainer>
 
@@ -61,8 +61,21 @@ export default Features
 const StyledContainer = styled(Container)``
 
 const WarningContainer = styled(Container)`
-  margin-top: 6%;
+  margin-top: 1%;
 `
+const WarningTitle = styled.h4`
+  color: red;
+  letter-spacing: 0px;
+  font-size: 9px;
+`
+const WarningText = styled.p`
+  text-align: center;
+  font-size: 9px;
+  margin-top: -20px;
+  line-height: 10px;
+
+`
+
 
 
 const SectionTitle = styled.h3`

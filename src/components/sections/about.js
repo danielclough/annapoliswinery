@@ -26,18 +26,12 @@ const Features = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Mission Statement</FeatureTitle>
-          <FeatureText>
-            What you taste in the bottle is what is grown in the fields.  All our wines are made from locally grown wine grapes.  Our mission statement:  "To Use Local Fruit and Provide our Customers with the Essence of The Sonoma North Coast."
-          </FeatureText>
-        </FeatureItem>
-      </FeaturesGrid>
-        <FeatureItem>
           <FeatureTitle>Family</FeatureTitle>
           <FeatureText>
              We are family owned and operated, and are involved in every phase of the wine growing process.  From pruning to bottling, we take personal pride in producing the best wine we possibly can. Our focus is on quality, not quantity. We produce a very small amount of wine, taking personal care at each step of the process. 
           </FeatureText>
         </FeatureItem>
+      </FeaturesGrid>
     </StyledContainer>
   </Section>
 )
