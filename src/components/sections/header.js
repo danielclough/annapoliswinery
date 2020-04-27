@@ -10,7 +10,7 @@ const Header = () => {
     query {
       file(sourceInstanceName: { eq: "product" }, name: { eq: "green-skew" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
@@ -27,23 +27,20 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>Wine Club and Events</Subtitle>
             <h1>
-              All your money,
-              <br />
-              one account
+              "Amazing wine, fantastic events. Just perfect really!"
             </h1>
             <h2>
-              We're building next generation personal finance tools. Sign up to
-              get early access.
+              If you have enjoyed our wine for generations, or meeting us for 
+              the first time. Sign up for our newsletter!
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               <HeaderInput placeholder="Your email" />
-              <HeaderButton>Early access</HeaderButton>
+              <HeaderButton>Subscribe</HeaderButton>
             </HeaderForm>
             <FormSubtitle>
-              Already have a beta account?{" "}
-              <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
+              Put Social Icons Here
             </FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>
@@ -189,20 +186,18 @@ const HeaderButton = styled.button`
   }
 `
 const ImageWrapper = styled.div`
-  justify-self: end;
+  justify-self: center;
   align-self: center;
-  @media (max-width: ${props => props.theme.screen.md}) {
-    justify-self: center;
   }
 `
 
 const StyledImage = styled(Img)`
-  width: 500px;
+  width: 200px;
   @media (max-width: ${props => props.theme.screen.md}) {
-    width: 400px;
+    width: 200px;
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
-    width: 300px;
+    width: 200px;
     display: none;
   }
 `

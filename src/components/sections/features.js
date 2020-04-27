@@ -6,42 +6,43 @@ import { Section, Container } from "../global"
 const Features = () => (
   <Section id="features">
     <StyledContainer>
-      <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <Subtitle>Learn More</Subtitle>
+      <SectionTitle></SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>About Us</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            The vinyards were planted in 1978 by Basil and Barbara Scalabrini.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>Wine Making</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Growing conditions in Annapolis are unique to Sonoma County.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>Philosophy</FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            We practice sustainable farming and do not use synthetic pesticides.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
+          <FeatureTitle>Events</FeatureTitle>
           <FeatureText>
-            Easily link up to 5 banks to your finance account.
+            We have a complete kitchen, and can serve up to 200 guests.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
+          <FeatureTitle>Weddings</FeatureTitle>
+          <FeatureText>
+          We will help you plan according to your wishes to create a successful and joyful celebration.
+          </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Rewards</FeatureTitle>
           <FeatureText>
-            High interest and rewards for hitting your goals.
+             We produce a very small amount of wine, taking personal care at each step of the process.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
