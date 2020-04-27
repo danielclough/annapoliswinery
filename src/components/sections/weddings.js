@@ -3,7 +3,14 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
-const Weddings = () => (
+
+import Accordion from '../common/layout/Accordion';
+
+
+
+
+const Weddings = () => {
+  return (
   <Section id="weddings">
     <StyledContainer>
         <FeatureItem>
@@ -17,23 +24,9 @@ const Weddings = () => (
                         <br />
                   Available dates May  through September.  <br />
                    <br />
-                       <button> Call for reservations.</button> <br />
-                        <br />
-                       <button>Learn more</button> <br />
 
-              <InfoText>
-              Information and Pricing: <br />
-               <br />
-              1- 200 guest maximum <br />
-
-              2- Available May1 to September 30 <br />
-
-              3- Available 4pm to 10pm .  Other times may be available, please inquire   <br />
-
-              4- Receptions/parties/rehearsal dinners and corporate events OK <br />
-
-              5- Outdoor facility <br />
-
+      <Accordion>
+        <div label='Pricing'>
               6- Set up and break down included <br />
 
               7- Catering kitchen Included <br />
@@ -43,6 +36,19 @@ const Weddings = () => (
               9- Includes tables, chairs, place settings, bartender and site attendant, gazebo set-up, lighting and clean up <br />
 
               10- Not included: beverages, catering, food service, linens, flowers, minister, photographer, cake, decorations, etc. <br />
+                 
+        </div>
+        <div label='Information'>
+               <br />
+              1- 200 guest maximum <br />
+
+              2- Available May 1 to September 30 <br />
+
+              3- Available 4pm to 10pm .  Other times may be available, please inquire   <br />
+
+              4- Receptions/parties/rehearsal dinners and corporate events OK <br />
+
+              5- Outdoor facility <br />
 
               11- Third party rental items to consider: dance floor, tent, stage, heaters, sound system, DJ/Band <br />
 
@@ -65,12 +71,15 @@ const Weddings = () => (
               17- Many award winning Annapolis wines to choose from.  <br /> 
                <br /> 
               If you would like to bring your own wine, a $15 corkage per bottle will apply, $2.00 per six pack of beer, $30 per keg, and $6 per bottle of champagne.  <br />
-              </InfoText>
+        </div>
+      </Accordion>
+                       <WeddingButton> Contact</WeddingButton> <br />
+                        <br />
           </FeatureText>
         </FeatureItem>
     </StyledContainer>
   </Section>
-)
+)}
 
 export default Weddings
 
@@ -125,4 +134,32 @@ const FeatureText = styled.p`
 
 const InfoText = styled.p`
   text-align: left;
+`
+
+const WeddingButton = styled.button`
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1px;
+  height: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  background: ${props => props.theme.color.secondary};
+  border-radius: 4px;
+  padding: 0px 40px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: 0px;
+  &:hover {
+    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
+  }
+  @media (max-width: ${props => props.theme.screen.md}) {
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-left: 0;
+  }
 `

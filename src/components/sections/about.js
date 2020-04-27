@@ -6,8 +6,6 @@ import { Section, Container } from "../global"
 const Features = () => (
   <Section id="about">
     <StyledContainer>
-      <Subtitle>About Us</Subtitle>
-      <SectionTitle></SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>History</FeatureTitle>
@@ -33,19 +31,13 @@ const Features = () => (
             What you taste in the bottle is what is grown in the fields.  All our wines are made from locally grown wine grapes.  Our mission statement:  "To Use Local Fruit and Provide our Customers with the Essence of The Sonoma North Coast."
           </FeatureText>
         </FeatureItem>
+      </FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>Family</FeatureTitle>
           <FeatureText>
              We are family owned and operated, and are involved in every phase of the wine growing process.  From pruning to bottling, we take personal pride in producing the best wine we possibly can. Our focus is on quality, not quantity. We produce a very small amount of wine, taking personal care at each step of the process. 
           </FeatureText>
         </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Weddings</FeatureTitle>
-          <FeatureText>
-          Our facilities are available for events, weddings and celebrations. We have a complete kitchen, and can service up to 200 guests. The grounds offer breath-taking panoramic views of the vineyards and surrounding forest. There are plenty of wonderful lodging and dining facilities along the coast. 
-          </FeatureText>
-        </FeatureItem>
-      </FeaturesGrid>
     </StyledContainer>
   </Section>
 )
